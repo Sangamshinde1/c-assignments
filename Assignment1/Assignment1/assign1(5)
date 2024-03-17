@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+    char ch;
+    printf("Enter the Character: ");
+    scanf("%c", &ch);
+
+    if(ch>=65 && ch<=90 || ch>=97 && ch<=122)
+    {
+        if (ch>=65 && ch<=90)
+        {
+            printf("Character is UPPERCASE\n", ch);
+        }
+        else
+        {
+            printf("Character is Lowercase\n", ch);
+        }
+       
+    }
+    else if (ch>=48 && ch<=57)
+    
+            printf("Character is Digit\n");
+
+    else if(ch == '\n')
+        printf("Enter");
+
+    else if (ch == '\t')
+        printf("Tab");
+
+    else if(ch == ' ' || ch == 32)
+        printf("Space");
+
+    
+    
+    return 0;
+   
+    
+
+}
